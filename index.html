@@ -1,0 +1,2338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ED1E2E">
+
+  <title>MMDC | Multidisciplinary Dental Care in Dubai</title>
+  <meta name="description" content="Discover personalised dental care at MMDC in Barsha Heights, Dubai. Explore cosmetic dentistry, dental implants, orthodontics, family dentistry and specialist treatments.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://mmdc.ae/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="MMDC | Expert Dental Care, Made Personal">
+  <meta property="og:description" content="A multidisciplinary dental team, a comprehensive range of treatments and a more personal approach to dental care in Dubai.">
+  <meta property="og:url" content="https://mmdc.ae/">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&w=1200&q=85">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --red: #ED1E2E;
+      --red-dark: #B91425;
+      --red-soft: #FCEBED;
+      --red-pale: #FFF5F5;
+      --ink: #202326;
+      --body: #596268;
+      --muted: #899196;
+      --paper: #FAF9F7;
+      --soft: #F2F3F3;
+      --white: #FFFFFF;
+      --line: #E5E7E8;
+      --green: #315F55;
+      --font-heading: "Manrope", sans-serif;
+      --font-body: "Source Sans 3", sans-serif;
+      --container: 1200px;
+      --radius-sm: 12px;
+      --radius-md: 20px;
+      --radius-lg: 30px;
+      --shadow-soft: 0 18px 50px rgba(32, 35, 38, .07);
+      --shadow-card: 0 10px 35px rgba(32, 35, 38, .06);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 100px;
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--white);
+      font-family: var(--font-body);
+      font-size: 17px;
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    body, button, a { -webkit-tap-highlight-color: transparent; }
+
+    img {
+      display: block;
+      max-width: 100%;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button { font: inherit; }
+
+    .container {
+      width: min(var(--container), calc(100% - 48px));
+      margin-inline: auto;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--red-dark);
+      font-family: var(--font-heading);
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: .16em;
+      line-height: 1.4;
+      text-transform: uppercase;
+    }
+
+    .eyebrow::before {
+      width: 23px;
+      height: 2px;
+      background: var(--red);
+      content: "";
+    }
+
+    h1, h2, h3, h4, p { margin-top: 0; }
+
+    h1, h2, h3, h4 {
+      font-family: var(--font-heading);
+      letter-spacing: -.045em;
+    }
+
+    h1 {
+      max-width: 760px;
+      margin-bottom: 24px;
+      font-size: clamp(44px, 6.1vw, 78px);
+      font-weight: 700;
+      line-height: 1.04;
+    }
+
+    h2 {
+      margin-bottom: 18px;
+      font-size: clamp(34px, 4.3vw, 54px);
+      font-weight: 700;
+      line-height: 1.12;
+    }
+
+    h3 {
+      margin-bottom: 12px;
+      font-size: 22px;
+      font-weight: 700;
+      line-height: 1.25;
+    }
+
+    .section-intro {
+      max-width: 660px;
+      color: var(--body);
+      font-size: 19px;
+      line-height: 1.7;
+    }
+
+    .section-heading {
+      max-width: 760px;
+      margin-bottom: 48px;
+    }
+
+    .section-heading.center {
+      margin-inline: auto;
+      text-align: center;
+    }
+
+    .section-heading.center .eyebrow {
+      justify-content: center;
+    }
+
+    .section-heading.center .section-intro {
+      margin-inline: auto;
+    }
+
+    .btn {
+      display: inline-flex;
+      min-height: 54px;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      padding: 14px 23px;
+      border: 1px solid transparent;
+      border-radius: 999px;
+      cursor: pointer;
+      font-family: var(--font-heading);
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: .01em;
+      transition: transform .25s ease, background .25s ease, border-color .25s ease, box-shadow .25s ease;
+    }
+
+    .btn:hover { transform: translateY(-3px); }
+
+    .btn-primary {
+      color: var(--white);
+      background: var(--red);
+      box-shadow: 0 9px 24px rgba(237, 30, 46, .19);
+    }
+
+    .btn-primary:hover {
+      background: var(--red-dark);
+      box-shadow: 0 13px 28px rgba(185, 20, 37, .23);
+    }
+
+    .btn-outline {
+      color: var(--ink);
+      border-color: rgba(32, 35, 38, .2);
+      background: rgba(255, 255, 255, .72);
+    }
+
+    .btn-outline:hover {
+      border-color: var(--red);
+      background: var(--red-pale);
+    }
+
+    .arrow {
+      font-size: 18px;
+      line-height: 1;
+      transition: transform .2s ease;
+    }
+
+    .btn:hover .arrow { transform: translateX(4px); }
+
+    /* Announcement and navigation */
+
+    .topline {
+      padding: 9px 0;
+      color: rgba(255, 255, 255, .9);
+      background: var(--ink);
+      font-size: 12px;
+      letter-spacing: .035em;
+    }
+
+    .topline-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .topline a { color: var(--white); }
+    .topline strong { color: var(--white); font-weight: 700; }
+
+    .topline-right {
+      display: flex;
+      gap: 24px;
+    }
+
+    .site-header {
+      position: sticky;
+      z-index: 100;
+      top: 0;
+      border-bottom: 1px solid rgba(229, 231, 232, .8);
+      background: rgba(255, 255, 255, .94);
+      backdrop-filter: blur(16px);
+    }
+
+    .nav-wrap {
+      display: flex;
+      min-height: 84px;
+      align-items: center;
+      justify-content: space-between;
+      gap: 28px;
+    }
+
+    .brand {
+      display: inline-flex;
+      flex-shrink: 0;
+      align-items: center;
+      gap: 11px;
+    }
+
+    .brand-mark {
+      display: grid;
+      width: 48px;
+      height: 48px;
+      place-items: center;
+      border: 2px solid var(--red);
+      border-radius: 14px 14px 14px 4px;
+      color: var(--red);
+      font-family: var(--font-heading);
+      font-size: 21px;
+      font-weight: 800;
+      letter-spacing: -.12em;
+    }
+
+    .brand-copy {
+      display: grid;
+      gap: 1px;
+      line-height: 1.1;
+    }
+
+    .brand-copy strong {
+      font-family: var(--font-heading);
+      font-size: 17px;
+      font-weight: 800;
+      letter-spacing: .08em;
+    }
+
+    .brand-copy small {
+      color: var(--muted);
+      font-size: 9px;
+      font-weight: 700;
+      letter-spacing: .15em;
+      text-transform: uppercase;
+    }
+
+    .main-nav {
+      display: flex;
+      align-items: center;
+      gap: clamp(18px, 2.5vw, 34px);
+    }
+
+    .main-nav a {
+      color: #41484C;
+      font-family: var(--font-heading);
+      font-size: 12px;
+      font-weight: 700;
+      transition: color .2s ease;
+    }
+
+    .main-nav a:hover { color: var(--red); }
+
+    .nav-cta { min-height: 46px; padding: 11px 19px; }
+
+    .menu-toggle {
+      display: none;
+      width: 46px;
+      height: 46px;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid var(--line);
+      border-radius: 50%;
+      color: var(--ink);
+      background: var(--white);
+      cursor: pointer;
+      font-size: 22px;
+    }
+
+    /* Hero */
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      padding: 76px 0 82px;
+      background:
+        radial-gradient(circle at 3% 8%, rgba(237, 30, 46, .055), transparent 27%),
+        linear-gradient(115deg, #FFFEFD 0%, #FAF9F7 55%, #F8F5F2 100%);
+    }
+
+    .hero::before {
+      position: absolute;
+      top: 0;
+      right: -140px;
+      width: 520px;
+      height: 520px;
+      border: 1px solid rgba(237, 30, 46, .09);
+      border-radius: 50%;
+      content: "";
+    }
+
+    .hero::after {
+      position: absolute;
+      top: 80px;
+      right: -60px;
+      width: 360px;
+      height: 360px;
+      border: 1px solid rgba(237, 30, 46, .08);
+      border-radius: 50%;
+      content: "";
+    }
+
+    .hero-grid {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      gap: 64px;
+    }
+
+    .hero-copy { padding: 12px 0 24px; }
+
+    .hero h1 span {
+      color: var(--red);
+    }
+
+    .hero-description {
+      max-width: 570px;
+      margin-bottom: 30px;
+      color: var(--body);
+      font-size: 19px;
+      line-height: 1.7;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 13px;
+      margin-bottom: 34px;
+    }
+
+    .hero-proof {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 12px 20px;
+      color: var(--body);
+      font-size: 13px;
+    }
+
+    .proof-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .proof-dot {
+      display: grid;
+      width: 22px;
+      height: 22px;
+      place-items: center;
+      border-radius: 50%;
+      color: var(--red);
+      background: var(--red-soft);
+      font-size: 12px;
+      font-weight: 800;
+    }
+
+    .hero-visual {
+      position: relative;
+      min-height: 540px;
+    }
+
+    .hero-image {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 88%;
+      height: 500px;
+      overflow: hidden;
+      border-radius: 46% 46% 18px 18px;
+      background: #E9E5E1;
+      box-shadow: var(--shadow-soft);
+    }
+
+    .hero-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    .hero-image::after {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, transparent 65%, rgba(32, 35, 38, .12));
+      content: "";
+    }
+
+    .hero-stamp {
+      position: absolute;
+      top: 40px;
+      left: 0;
+      display: grid;
+      width: 112px;
+      height: 112px;
+      place-content: center;
+      border: 1px solid rgba(237, 30, 46, .2);
+      border-radius: 50%;
+      color: var(--red-dark);
+      background: var(--white);
+      box-shadow: var(--shadow-card);
+      text-align: center;
+      transform: rotate(-10deg);
+    }
+
+    .hero-stamp strong {
+      font-family: var(--font-heading);
+      font-size: 24px;
+      line-height: 1;
+    }
+
+    .hero-stamp small {
+      margin-top: 6px;
+      font-size: 8px;
+      font-weight: 800;
+      letter-spacing: .12em;
+      line-height: 1.3;
+      text-transform: uppercase;
+    }
+
+    .hero-note {
+      position: absolute;
+      right: -4px;
+      bottom: 2px;
+      display: flex;
+      max-width: 285px;
+      align-items: center;
+      gap: 14px;
+      padding: 18px 20px;
+      border: 1px solid rgba(229, 231, 232, .8);
+      border-radius: 16px;
+      background: var(--white);
+      box-shadow: var(--shadow-soft);
+    }
+
+    .hero-note-mark {
+      display: grid;
+      width: 42px;
+      height: 42px;
+      flex: 0 0 42px;
+      place-items: center;
+      border-radius: 13px;
+      color: var(--red);
+      background: var(--red-soft);
+      font-family: var(--font-heading);
+      font-size: 17px;
+      font-weight: 800;
+    }
+
+    .hero-note strong {
+      display: block;
+      font-family: var(--font-heading);
+      font-size: 12px;
+      line-height: 1.35;
+    }
+
+    .hero-note span {
+      display: block;
+      margin-top: 3px;
+      color: var(--muted);
+      font-size: 11px;
+      line-height: 1.4;
+    }
+
+    /* Proof strip */
+
+    .proof-strip {
+      position: relative;
+      z-index: 2;
+      padding: 24px 0;
+      border-bottom: 1px solid var(--line);
+      background: var(--white);
+    }
+
+    .proof-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+
+    .proof-stat {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 5px 16px;
+      border-right: 1px solid var(--line);
+    }
+
+    .proof-stat:last-child { border-right: 0; }
+
+    .proof-stat b {
+      display: block;
+      font-family: var(--font-heading);
+      font-size: 17px;
+      font-weight: 800;
+      line-height: 1.25;
+    }
+
+    .proof-stat span {
+      display: block;
+      margin-top: 4px;
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.4;
+    }
+
+    .proof-stat-mark {
+      display: grid;
+      width: 42px;
+      height: 42px;
+      flex: 0 0 42px;
+      place-items: center;
+      border-radius: 14px;
+      color: var(--red);
+      background: var(--red-pale);
+      font-family: var(--font-heading);
+      font-size: 18px;
+      font-weight: 800;
+    }
+
+    /* Intro */
+
+    .intro-section {
+      padding: 112px 0;
+      background: var(--white);
+    }
+
+    .intro-grid {
+      display: grid;
+      grid-template-columns: .9fr 1.1fr;
+      align-items: center;
+      gap: 80px;
+    }
+
+    .intro-visual {
+      position: relative;
+      min-height: 480px;
+    }
+
+    .intro-visual img {
+      width: 100%;
+      height: 460px;
+      border-radius: var(--radius-lg);
+      object-fit: cover;
+    }
+
+    .intro-visual-accent {
+      position: absolute;
+      right: -18px;
+      bottom: -18px;
+      z-index: -1;
+      width: 55%;
+      height: 55%;
+      border: 1px solid rgba(237, 30, 46, .25);
+      border-radius: var(--radius-lg);
+    }
+
+    .intro-copy h2 { max-width: 580px; }
+
+    .intro-copy p {
+      color: var(--body);
+      font-size: 17px;
+    }
+
+    .intro-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px 22px;
+      margin: 26px 0 32px;
+      padding: 0;
+      list-style: none;
+    }
+
+    .intro-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      color: #41484C;
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    .intro-list li::before {
+      display: grid;
+      width: 20px;
+      height: 20px;
+      flex: 0 0 20px;
+      place-items: center;
+      border-radius: 50%;
+      color: var(--red);
+      background: var(--red-soft);
+      content: "✓";
+      font-size: 11px;
+      font-weight: 800;
+    }
+
+    /* Services */
+
+    .services-section {
+      padding: 110px 0 116px;
+      background: var(--paper);
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .service-card {
+      position: relative;
+      display: flex;
+      min-height: 280px;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 30px;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: var(--radius-md);
+      background: var(--white);
+      transition: transform .3s ease, box-shadow .3s ease, border-color .3s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-7px);
+      border-color: rgba(237, 30, 46, .24);
+      box-shadow: var(--shadow-soft);
+    }
+
+    .service-icon {
+      display: grid;
+      width: 62px;
+      height: 62px;
+      place-items: center;
+      margin-bottom: 25px;
+      border-radius: 18px;
+      color: var(--red);
+      background: var(--red-pale);
+    }
+
+    .service-icon svg {
+      width: 35px;
+      height: 35px;
+      fill: none;
+      stroke: currentColor;
+      stroke-width: 1.55;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .service-card p {
+      max-width: 310px;
+      margin-bottom: 20px;
+      color: var(--body);
+      font-size: 15px;
+      line-height: 1.6;
+    }
+
+    .service-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: auto;
+      color: var(--red-dark);
+      font-family: var(--font-heading);
+      font-size: 12px;
+      font-weight: 800;
+    }
+
+    .service-link span { transition: transform .2s ease; }
+    .service-link:hover span { transform: translateX(4px); }
+
+    .services-footnote {
+      margin: 32px 0 0;
+      color: var(--muted);
+      font-size: 13px;
+      text-align: center;
+    }
+
+    .services-footnote a {
+      color: var(--red-dark);
+      font-weight: 700;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    /* Patient journey */
+
+    .journey-section {
+      padding: 112px 0;
+      background: var(--white);
+    }
+
+    .journey-layout {
+      display: grid;
+      grid-template-columns: .8fr 1.2fr;
+      align-items: start;
+      gap: 80px;
+    }
+
+    .journey-aside {
+      position: sticky;
+      top: 125px;
+    }
+
+    .journey-aside p {
+      color: var(--body);
+      font-size: 18px;
+    }
+
+    .journey-steps {
+      display: grid;
+      gap: 0;
+    }
+
+    .journey-step {
+      display: grid;
+      grid-template-columns: 54px 1fr;
+      gap: 22px;
+      padding: 0 0 34px;
+    }
+
+    .journey-step:not(:last-child) .step-number::after {
+      position: absolute;
+      top: 55px;
+      left: 50%;
+      width: 1px;
+      height: calc(100% + 10px);
+      background: var(--line);
+      content: "";
+    }
+
+    .step-number {
+      position: relative;
+      display: grid;
+      width: 54px;
+      height: 54px;
+      place-items: center;
+      border: 1px solid rgba(237, 30, 46, .2);
+      border-radius: 50%;
+      color: var(--red);
+      background: var(--red-pale);
+      font-family: var(--font-heading);
+      font-size: 15px;
+      font-weight: 800;
+    }
+
+    .journey-step h3 { margin: 2px 0 8px; }
+
+    .journey-step p {
+      margin: 0;
+      color: var(--body);
+      font-size: 15px;
+    }
+
+    /* Clinical team */
+
+    .team-section {
+      padding: 110px 0;
+      background: #F7F7F6;
+    }
+
+    .team-feature {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      gap: 55px;
+      padding: 38px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius-lg);
+      background: var(--white);
+      box-shadow: var(--shadow-card);
+    }
+
+    .team-feature-image {
+      min-height: 370px;
+      overflow: hidden;
+      border-radius: 20px;
+      background: var(--soft);
+    }
+
+    .team-feature-image img {
+      width: 100%;
+      height: 370px;
+      object-fit: cover;
+    }
+
+    .team-feature-copy p {
+      color: var(--body);
+      font-size: 17px;
+    }
+
+    .team-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 9px;
+      margin: 24px 0 30px;
+    }
+
+    .team-tags span {
+      padding: 8px 12px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      color: #4C5559;
+      background: #FCFCFB;
+      font-size: 12px;
+      font-weight: 600;
+    }
+
+    .team-note {
+      margin-top: 22px;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    /* Technology */
+
+    .technology-section {
+      padding: 108px 0;
+      color: var(--white);
+      background: var(--ink);
+    }
+
+    .technology-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      gap: 75px;
+    }
+
+    .technology-copy .eyebrow { color: #FF9BA3; }
+
+    .technology-copy h2 { color: var(--white); }
+
+    .technology-copy p {
+      color: rgba(255, 255, 255, .68);
+      font-size: 17px;
+    }
+
+    .technology-image {
+      position: relative;
+      min-height: 390px;
+    }
+
+    .technology-image img {
+      width: 100%;
+      height: 390px;
+      border-radius: var(--radius-lg);
+      object-fit: cover;
+    }
+
+    .technology-image::before {
+      position: absolute;
+      top: -14px;
+      right: -14px;
+      width: 120px;
+      height: 120px;
+      border-top: 2px solid var(--red);
+      border-right: 2px solid var(--red);
+      content: "";
+    }
+
+    .technology-points {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+      margin-top: 28px;
+    }
+
+    .technology-point {
+      padding: 17px;
+      border: 1px solid rgba(255, 255, 255, .12);
+      border-radius: 14px;
+      background: rgba(255, 255, 255, .045);
+    }
+
+    .technology-point strong {
+      display: block;
+      margin-bottom: 5px;
+      color: var(--white);
+      font-family: var(--font-heading);
+      font-size: 13px;
+    }
+
+    .technology-point span {
+      color: rgba(255, 255, 255, .58);
+      font-size: 12px;
+    }
+
+    /* Reviews */
+
+    .reviews-section {
+      padding: 108px 0;
+      background: var(--white);
+    }
+
+    .review-panel {
+      display: grid;
+      grid-template-columns: .7fr 1.3fr;
+      align-items: center;
+      gap: 55px;
+      padding: 48px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius-lg);
+      background: var(--paper);
+    }
+
+    .review-score {
+      padding-right: 30px;
+      border-right: 1px solid var(--line);
+      text-align: center;
+    }
+
+    .review-score strong {
+      display: block;
+      color: var(--ink);
+      font-family: var(--font-heading);
+      font-size: 66px;
+      font-weight: 700;
+      letter-spacing: -.07em;
+      line-height: 1;
+    }
+
+    .review-stars {
+      margin: 13px 0 8px;
+      color: var(--red);
+      font-size: 19px;
+      letter-spacing: .15em;
+    }
+
+    .review-score span {
+      color: var(--body);
+      font-size: 13px;
+    }
+
+    .review-copy h3 {
+      max-width: 550px;
+      font-size: 27px;
+    }
+
+    .review-copy p {
+      max-width: 620px;
+      margin-bottom: 22px;
+      color: var(--body);
+    }
+
+    .review-disclaimer {
+      margin-top: 14px;
+      color: var(--muted);
+      font-size: 11px;
+    }
+
+    /* FAQ */
+
+    .faq-section {
+      padding: 108px 0;
+      background: var(--paper);
+    }
+
+    .faq-layout {
+      display: grid;
+      grid-template-columns: .75fr 1.25fr;
+      gap: 80px;
+    }
+
+    .faq-aside p {
+      color: var(--body);
+      font-size: 17px;
+    }
+
+    .faq-list {
+      border-top: 1px solid var(--line);
+    }
+
+    .faq-item {
+      border-bottom: 1px solid var(--line);
+    }
+
+    .faq-question {
+      display: flex;
+      width: 100%;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 23px 0;
+      border: 0;
+      color: var(--ink);
+      background: transparent;
+      cursor: pointer;
+      font-family: var(--font-heading);
+      font-size: 15px;
+      font-weight: 700;
+      text-align: left;
+    }
+
+    .faq-question span:last-child {
+      display: grid;
+      width: 30px;
+      height: 30px;
+      flex: 0 0 30px;
+      place-items: center;
+      border-radius: 50%;
+      color: var(--red);
+      background: var(--red-soft);
+      font-size: 19px;
+      transition: transform .2s ease;
+    }
+
+    .faq-item.active .faq-question span:last-child { transform: rotate(45deg); }
+
+    .faq-answer {
+      display: none;
+      max-width: 700px;
+      padding: 0 45px 22px 0;
+      color: var(--body);
+      font-size: 15px;
+    }
+
+    .faq-item.active .faq-answer { display: block; }
+
+    /* Appointment CTA */
+
+    .appointment-section {
+      position: relative;
+      overflow: hidden;
+      padding: 92px 0;
+      color: var(--white);
+      background: var(--red);
+    }
+
+    .appointment-section::before,
+    .appointment-section::after {
+      position: absolute;
+      border: 1px solid rgba(255, 255, 255, .16);
+      border-radius: 50%;
+      content: "";
+    }
+
+    .appointment-section::before {
+      top: -240px;
+      right: -100px;
+      width: 560px;
+      height: 560px;
+    }
+
+    .appointment-section::after {
+      top: -160px;
+      right: -20px;
+      width: 400px;
+      height: 400px;
+    }
+
+    .appointment-inner {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 40px;
+    }
+
+    .appointment-copy { max-width: 700px; }
+
+    .appointment-copy .eyebrow { color: rgba(255, 255, 255, .78); }
+
+    .appointment-copy .eyebrow::before { background: var(--white); }
+
+    .appointment-copy h2 {
+      margin-bottom: 14px;
+      color: var(--white);
+    }
+
+    .appointment-copy p {
+      max-width: 590px;
+      margin: 0;
+      color: rgba(255, 255, 255, .83);
+      font-size: 18px;
+    }
+
+    .appointment-actions {
+      display: flex;
+      flex: 0 0 auto;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .appointment-actions .btn-primary {
+      color: var(--red-dark);
+      background: var(--white);
+      box-shadow: none;
+    }
+
+    .appointment-actions .btn-primary:hover { background: #FFF1F2; }
+
+    .appointment-actions .btn-outline {
+      color: var(--white);
+      border-color: rgba(255, 255, 255, .55);
+      background: transparent;
+    }
+
+    .appointment-actions .btn-outline:hover {
+      color: var(--red-dark);
+      background: var(--white);
+    }
+
+    /* Location and footer */
+
+    .contact-section {
+      padding: 104px 0;
+      background: var(--white);
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 70px;
+    }
+
+    .contact-copy p {
+      max-width: 500px;
+      color: var(--body);
+      font-size: 17px;
+    }
+
+    .contact-details {
+      display: grid;
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .contact-detail {
+      display: grid;
+      grid-template-columns: 44px 1fr;
+      gap: 14px;
+      align-items: start;
+    }
+
+    .contact-detail-mark {
+      display: grid;
+      width: 44px;
+      height: 44px;
+      place-items: center;
+      border-radius: 14px;
+      color: var(--red);
+      background: var(--red-pale);
+      font-size: 17px;
+      font-weight: 800;
+    }
+
+    .contact-detail strong {
+      display: block;
+      margin-bottom: 3px;
+      font-family: var(--font-heading);
+      font-size: 13px;
+    }
+
+    .contact-detail span,
+    .contact-detail a {
+      color: var(--body);
+      font-size: 14px;
+    }
+
+    .contact-detail a:hover { color: var(--red-dark); }
+
+    .location-card {
+      padding: 35px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius-lg);
+      background: var(--paper);
+    }
+
+    .location-card h3 { margin-bottom: 12px; }
+
+    .location-card p {
+      color: var(--body);
+      font-size: 15px;
+    }
+
+    .hours-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 12px 0;
+      border-bottom: 1px solid var(--line);
+      color: var(--body);
+      font-size: 14px;
+    }
+
+    .hours-row:last-of-type { border-bottom: 0; }
+    .hours-row strong { color: var(--ink); }
+
+    .location-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 25px;
+    }
+
+    .location-actions .btn {
+      min-height: 46px;
+      padding: 11px 16px;
+      font-size: 11px;
+    }
+
+    .site-footer {
+      padding: 42px 0 92px;
+      color: rgba(255, 255, 255, .72);
+      background: #191C1F;
+    }
+
+    .footer-top {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 40px;
+      padding-bottom: 34px;
+      border-bottom: 1px solid rgba(255, 255, 255, .12);
+    }
+
+    .footer-brand .brand-copy strong { color: var(--white); }
+    .footer-brand .brand-copy small { color: rgba(255, 255, 255, .48); }
+
+    .footer-description {
+      max-width: 390px;
+      margin: 18px 0 0;
+      color: rgba(255, 255, 255, .56);
+      font-size: 13px;
+    }
+
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px 26px;
+    }
+
+    .footer-links a {
+      color: rgba(255, 255, 255, .75);
+      font-size: 13px;
+    }
+
+    .footer-links a:hover { color: var(--white); }
+
+    .footer-bottom {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      padding-top: 22px;
+      color: rgba(255, 255, 255, .42);
+      font-size: 11px;
+    }
+
+    /* Mobile action bar */
+
+    .mobile-action-bar {
+      position: fixed;
+      z-index: 200;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      display: none;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      padding: 11px 16px calc(11px + env(safe-area-inset-bottom));
+      border-top: 1px solid var(--line);
+      background: rgba(255, 255, 255, .97);
+      box-shadow: 0 -8px 30px rgba(32, 35, 38, .08);
+      backdrop-filter: blur(14px);
+    }
+
+    .mobile-action-bar .btn {
+      min-height: 48px;
+      padding: 10px 12px;
+      font-size: 12px;
+    }
+
+    /* Reveal motion */
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(22px);
+      transition: opacity .65s ease, transform .65s ease;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after {
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: .01ms !important;
+      }
+      .reveal { opacity: 1; transform: none; }
+    }
+
+    /* Responsive */
+
+    @media (max-width: 1000px) {
+      .main-nav { gap: 16px; }
+      .main-nav a { font-size: 11px; }
+      .hero-grid { gap: 35px; }
+      .hero-visual { min-height: 470px; }
+      .hero-image { height: 440px; }
+      .intro-grid, .journey-layout, .faq-layout { gap: 48px; }
+      .team-feature { gap: 35px; }
+    }
+
+    @media (max-width: 800px) {
+      .container { width: min(100% - 36px, var(--container)); }
+      .topline-right { display: none; }
+      .nav-wrap { min-height: 72px; }
+      .menu-toggle { display: inline-flex; }
+      .nav-cta { display: none; }
+
+      .main-nav {
+        position: absolute;
+        top: 72px;
+        right: 0;
+        left: 0;
+        display: none;
+        align-items: stretch;
+        flex-direction: column;
+        gap: 0;
+        padding: 8px 24px 18px;
+        border-bottom: 1px solid var(--line);
+        background: var(--white);
+        box-shadow: 0 18px 25px rgba(32, 35, 38, .06);
+      }
+
+      .main-nav.open { display: flex; }
+
+      .main-nav a {
+        padding: 13px 0;
+        border-bottom: 1px solid var(--line);
+        font-size: 13px;
+      }
+
+      .hero { padding: 56px 0 66px; }
+      .hero-grid { grid-template-columns: 1fr; gap: 35px; }
+      .hero-copy { padding-bottom: 0; }
+      .hero h1 { max-width: 680px; }
+      .hero-visual { width: min(100%, 580px); min-height: 480px; margin-inline: auto; }
+      .hero-image { width: 88%; height: 450px; }
+      .hero-stamp { left: 0; }
+      .hero-note { right: 0; }
+
+      .proof-grid { grid-template-columns: 1fr 1fr; }
+      .proof-stat:nth-child(2) { border-right: 0; }
+      .proof-stat:nth-child(-n+2) { padding-bottom: 15px; }
+      .proof-stat:nth-child(n+3) { padding-top: 15px; border-top: 1px solid var(--line); }
+
+      .intro-grid, .journey-layout, .technology-grid, .faq-layout, .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .intro-section, .services-section, .journey-section, .team-section,
+      .technology-section, .reviews-section, .faq-section, .contact-section {
+        padding: 78px 0;
+      }
+
+      .intro-visual { min-height: auto; }
+      .intro-visual img { height: 380px; }
+      .journey-aside { position: static; }
+      .services-grid { grid-template-columns: repeat(2, 1fr); }
+      .team-feature { grid-template-columns: 1fr; }
+      .team-feature-image, .team-feature-image img { min-height: 300px; height: 300px; }
+      .technology-grid { gap: 42px; }
+      .review-panel { grid-template-columns: 1fr; gap: 30px; }
+      .review-score { padding: 0 0 25px; border-right: 0; border-bottom: 1px solid var(--line); }
+      .appointment-inner { align-items: flex-start; flex-direction: column; }
+      .appointment-actions { flex-direction: row; flex-wrap: wrap; }
+      .contact-grid { gap: 40px; }
+      .footer-top { flex-direction: column; }
+      .site-footer { padding-bottom: 105px; }
+      .mobile-action-bar { display: grid; }
+    }
+
+    @media (max-width: 520px) {
+      body { font-size: 16px; }
+      .container { width: calc(100% - 32px); }
+      .topline { font-size: 11px; }
+      .brand-mark { width: 43px; height: 43px; }
+      .brand-copy strong { font-size: 15px; }
+      .hero { padding-top: 44px; }
+      h1 { font-size: clamp(41px, 12vw, 57px); }
+      h2 { font-size: 36px; }
+      .hero-description { font-size: 17px; }
+      .hero-actions { align-items: stretch; flex-direction: column; }
+      .hero-actions .btn { width: 100%; }
+      .hero-proof { gap: 10px 14px; font-size: 11px; }
+      .hero-visual { min-height: 370px; }
+      .hero-image { width: 91%; height: 350px; border-radius: 44% 44% 15px 15px; }
+      .hero-stamp { top: 25px; width: 88px; height: 88px; }
+      .hero-stamp strong { font-size: 20px; }
+      .hero-stamp small { font-size: 7px; }
+      .hero-note { right: -3px; bottom: 0; max-width: 235px; padding: 13px; }
+      .hero-note-mark { width: 35px; height: 35px; flex-basis: 35px; }
+      .hero-note strong { font-size: 11px; }
+      .hero-note span { font-size: 10px; }
+
+      .proof-grid { gap: 0; }
+      .proof-stat { gap: 10px; padding-inline: 6px; }
+      .proof-stat-mark { width: 35px; height: 35px; flex-basis: 35px; font-size: 15px; }
+      .proof-stat b { font-size: 13px; }
+      .proof-stat span { font-size: 10px; }
+
+      .intro-section, .services-section, .journey-section, .team-section,
+      .technology-section, .reviews-section, .faq-section, .contact-section {
+        padding: 68px 0;
+      }
+
+      .section-heading { margin-bottom: 32px; }
+      .section-intro { font-size: 17px; }
+      .intro-visual img { height: 310px; }
+      .intro-list { grid-template-columns: 1fr; gap: 11px; }
+      .services-grid { grid-template-columns: 1fr; gap: 14px; }
+      .service-card { min-height: 245px; padding: 25px; }
+      .service-icon { width: 56px; height: 56px; margin-bottom: 20px; }
+      .journey-step { grid-template-columns: 44px 1fr; gap: 15px; }
+      .step-number { width: 44px; height: 44px; }
+      .journey-step:not(:last-child) .step-number::after { top: 45px; }
+      .team-feature { padding: 18px; }
+      .team-feature-image, .team-feature-image img { min-height: 240px; height: 240px; }
+      .technology-image { min-height: 270px; }
+      .technology-image img { height: 270px; }
+      .technology-points { grid-template-columns: 1fr; }
+      .review-panel { padding: 28px 20px; }
+      .review-score strong { font-size: 58px; }
+      .review-copy h3 { font-size: 23px; }
+      .appointment-section { padding: 70px 0; }
+      .appointment-actions { width: 100%; flex-direction: column; }
+      .appointment-actions .btn { width: 100%; }
+      .location-card { padding: 24px 20px; }
+      .hours-row { font-size: 12px; }
+      .footer-links { gap: 14px 18px; }
+      .footer-bottom { flex-direction: column; gap: 8px; }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Dentist",
+    "name": "MMDC Medical & Dental Center",
+    "url": "https://mmdc.ae/",
+    "telephone": "+97142776055",
+    "email": "info@mmdc.ae",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Suite 202, 2nd Floor, Tameem House, Barsha Heights",
+      "addressLocality": "Dubai",
+      "addressCountry": "AE"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Saturday", "Sunday", "Monday", "Tuesday",
+          "Wednesday", "Thursday"
+        ],
+        "opens": "10:00",
+        "closes": "19:00"
+      }
+    ],
+    "medicalSpecialty": [
+      "Dentistry",
+      "Cosmetic Dentistry",
+      "Orthodontics",
+      "Pediatric Dentistry",
+      "Oral Surgery"
+    ],
+    "sameAs": [
+      "https://www.linkedin.com/company/mmdc-medical-dental-center/"
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <!-- Note: external Unsplash images are illustrative stock photography, not verified photographs of MMDC staff or premises. Replace with approved MMDC-owned photography before publication. -->
+
+  <div class="topline">
+    <div class="container topline-inner">
+      <span>Multidisciplinary dental care in <strong>Barsha Heights, Dubai</strong></span>
+      <div class="topline-right">
+        <a href="tel:+97142776055">+971 4 277 6055</a>
+        <a href="https://wa.me/971501582454" target="_blank" rel="noopener">WhatsApp us</a>
+      </div>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#home" aria-label="MMDC home">
+        <span class="brand-mark">M</span>
+        <span class="brand-copy">
+          <strong>MMDC</strong>
+          <small>Medical & Dental Center</small>
+        </span>
+      </a>
+
+      <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+        <a href="#about">About MMDC</a>
+        <a href="#services">Treatments</a>
+        <a href="#team">Our expertise</a>
+        <a href="#reviews">Patient trust</a>
+        <a href="#contact">Find us</a>
+      </nav>
+
+      <a class="btn btn-primary nav-cta" href="https://wa.me/971501582454" target="_blank" rel="noopener">
+        Book an appointment <span class="arrow">↗</span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mainNav">
+        ☰
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <span class="eyebrow">A more personal approach to dentistry</span>
+          <h1>Expert dental care.<br><span>Made personal.</span></h1>
+          <p class="hero-description">
+            From everyday family dentistry to advanced specialist treatments,
+            MMDC brings a multidisciplinary dental team together to help you
+            care for your smile with confidence.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="https://wa.me/971501582454" target="_blank" rel="noopener">
+              Arrange your visit <span class="arrow">↗</span>
+            </a>
+            <a class="btn btn-outline" href="#services">
+              Explore our treatments <span class="arrow">↓</span>
+            </a>
+          </div>
+
+          <div class="hero-proof">
+            <span class="proof-item"><span class="proof-dot">✓</span> Multidisciplinary dental care</span>
+            <span class="proof-item"><span class="proof-dot">✓</span> Internationally trained specialists</span>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="hero-image">
+            <img
+              src="https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&w=1100&q=85"
+              alt="Modern dental care environment"
+              fetchpriority="high"
+            >
+          </div>
+          <div class="hero-stamp">
+            <strong>MMDC</strong>
+            <small>Care with<br>confidence</small>
+          </div>
+          <div class="hero-note">
+            <div class="hero-note-mark">M</div>
+            <div>
+              <strong>More care, under one roof</strong>
+              <span>Dental specialties for different stages of life</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRUST SIGNALS -->
+    <section class="proof-strip" aria-label="MMDC highlights">
+      <div class="container proof-grid">
+        <div class="proof-stat">
+          <div class="proof-stat-mark">01</div>
+          <div>
+            <b>Multidisciplinary</b>
+            <span>A broad range of dental specialties</span>
+          </div>
+        </div>
+        <div class="proof-stat">
+          <div class="proof-stat-mark">02</div>
+          <div>
+            <b>International expertise</b>
+            <span>A team with diverse training backgrounds</span>
+          </div>
+        </div>
+        <div class="proof-stat">
+          <div class="proof-stat-mark">03</div>
+          <div>
+            <b>Family focused</b>
+            <span>Care for adults and children</span>
+          </div>
+        </div>
+        <div class="proof-stat">
+          <div class="proof-stat-mark">04</div>
+          <div>
+            <b>Dubai location</b>
+            <span>Conveniently based in Barsha Heights</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="intro-section" id="about">
+      <div class="container intro-grid">
+        <div class="intro-visual reveal">
+          <img
+            src="https://images.unsplash.com/photo-1609840114035-3c981b782dfe?auto=format&fit=crop&w=1000&q=85"
+            alt="Dental professional providing patient care"
+            loading="lazy"
+          >
+          <div class="intro-visual-accent"></div>
+        </div>
+
+        <div class="intro-copy reveal">
+          <span class="eyebrow">A different kind of dental experience</span>
+          <h2>One centre. A wider world of dental care.</h2>
+          <p>
+            Choosing dental care should feel straightforward. At MMDC, a
+            multidisciplinary team brings together a range of dental
+            specialties, helping patients explore the care that best fits
+            their needs.
+          </p>
+          <p>
+            The centre's approach combines international clinical experience
+            with an emphasis on personalised, gentle and honest care.
+          </p>
+
+          <ul class="intro-list">
+            <li>General and preventive dentistry</li>
+            <li>Cosmetic and restorative care</li>
+            <li>Implant and oral surgery services</li>
+            <li>Orthodontics and clear aligners</li>
+            <li>Children's dental care</li>
+            <li>Specialist periodontal treatment</li>
+          </ul>
+
+          <a class="btn btn-outline" href="#team">
+            Discover the MMDC approach <span class="arrow">↗</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES: EXACTLY SIX CUSTOM SVG ICONS IN TWO ROWS OF THREE -->
+    <section class="services-section" id="services">
+      <div class="container">
+        <div class="section-heading center reveal">
+          <span class="eyebrow">Explore your options</span>
+          <h2>Care that starts with what you need.</h2>
+          <p class="section-intro">
+            Whether you are maintaining your oral health, improving your
+            smile or exploring a specialist treatment, find the right place
+            to start.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <!-- ICON 1 -->
+          <article class="service-card reveal">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48">
+                <path d="M24 7c-5-4-13-1-14 7-1 7 3 12 5 19 1 4 2 8 5 8 3 0 2-9 5-9s2 9 5 9c3 0 4-4 5-8 2-7 6-12 5-19-1-8-9-11-16-7Z"/>
+                <path d="M18 16c2-2 5-3 8-2"/>
+                <path d="M18 23c2 1 4 1 6 0"/>
+              </svg>
+            </div>
+            <h3>General Dentistry</h3>
+            <p>
+              Support your everyday oral health with preventive care,
+              examinations, cleaning, fillings and restorative treatments.
+            </p>
+            <a class="service-link" href="https://mmdc.ae/" target="_blank" rel="noopener">
+              Explore general care <span>→</span>
+            </a>
+          </article>
+
+          <!-- ICON 2 -->
+          <article class="service-card reveal">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48">
+                <path d="M8 28c5-1 8-6 12-6 3 0 4 3 7 3 4 0 7-5 13-4"/>
+                <path d="M9 32c5 0 9-4 13-4 4 0 5 3 9 2 3-1 5-3 8-3"/>
+                <path d="M13 15c4-4 8-5 12-5 5 0 9 2 12 6"/>
+                <path d="M16 37c5 2 11 3 17 0"/>
+                <path d="M21 17c1-2 3-3 5-3"/>
+              </svg>
+            </div>
+            <h3>Cosmetic Dentistry</h3>
+            <p>
+              Explore options such as veneers, whitening and smile makeovers
+              with treatment planning tailored to your goals.
+            </p>
+            <a class="service-link" href="https://mmdc.ae/" target="_blank" rel="noopener">
+              Explore cosmetic care <span>→</span>
+            </a>
+          </article>
+
+          <!-- ICON 3 -->
+          <article class="service-card reveal">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48">
+                <path d="M12 9h24v30H12z"/>
+                <path d="M17 15h14M17 21h14M17 27h8"/>
+                <path d="M18 34h12"/>
+                <path d="M8 15h4M36 15h4M8 32h4M36 32h4"/>
+                <path d="M24 5v4M24 39v4"/>
+              </svg>
+            </div>
+            <h3>Orthodontics</h3>
+            <p>
+              Discover orthodontic options including braces and clear
+              aligners to help address alignment and bite concerns.
+            </p>
+            <a class="service-link" href="https://mmdc.ae/" target="_blank" rel="noopener">
+              Explore orthodontics <span>→</span>
+            </a>
+          </article>
+
+          <!-- ICON 4 -->
+          <article class="service-card reveal">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48">
+                <path d="M24 7v34"/>
+                <path d="M10 15h28"/>
+                <path d="M13 15l-6 13h12l-6-13Z"/>
+                <path d="M35 15l-6 13h12l-6-13Z"/>
+                <path d="M17 41h14"/>
+                <path d="M20 37h8"/>
+              </svg>
+            </div>
+            <h3>Dental Implants</h3>
+            <p>
+              Understand tooth-replacement options, including implant
+              treatments and full-mouth rehabilitation pathways.
+            </p>
+            <a class="service-link" href="https://mmdc.ae/" target="_blank" rel="noopener">
+              Explore implant care <span>→</span>
+            </a>
+          </article>
+
+          <!-- ICON 5 -->
+          <article class="service-card reveal">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48">
+                <path d="M8 25c0-9 7-16 16-16s16 7 16 16"/>
+                <path d="M8 25v6c0 3 2 5 5 5h3V24h-3c-3 0-5 1-5 1Z"/>
+                <path d="M40 25v6c0 3-2 5-5 5h-3V24h3c3 0 5 1 5 1Z"/>
+                <path d="M16 36c2 3 5 5 9 5h5"/>
+                <path d="M30 38h-4"/>
+              </svg>
+            </div>
+            <h3>Children's Dentistry</h3>
+            <p>
+              Help children build healthy habits with age-appropriate
+              examinations and a range of paediatric dental treatments.
+            </p>
+            <a class="service-link" href="https://mmdc.ae/" target="_blank" rel="noopener">
+              Explore children's care <span>→</span>
+            </a>
+          </article>
+
+          <!-- ICON 6 -->
+          <article class="service-card reveal">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48">
+                <path d="M8 34c4-3 7-7 9-12 2-5 5-8 9-8 4 0 7 3 9 8 1 4 3 7 6 10"/>
+                <path d="M9 38h30"/>
+                <path d="M15 30c3 2 6 3 9 3s6-1 9-3"/>
+                <path d="M19 12c2-2 4-3 7-3"/>
+                <path d="M24 18v7M20.5 21.5h7"/>
+              </svg>
+            </div>
+            <h3>Specialist Dental Care</h3>
+            <p>
+              Access a wider range of specialist services, including gum
+              treatment, endodontics, prosthodontics and oral surgery.
+            </p>
+            <a class="service-link" href="https://mmdc.ae/" target="_blank" rel="noopener">
+              Explore specialist care <span>→</span>
+            </a>
+          </article>
+        </div>
+
+        <p class="services-footnote">
+          Looking for a specific treatment? Contact the team to discuss
+          your needs and the available options.
+          <a href="https://wa.me/971501582454" target="_blank" rel="noopener">Speak to MMDC</a>.
+        </p>
+      </div>
+    </section>
+
+    <!-- PATIENT JOURNEY -->
+    <section class="journey-section">
+      <div class="container journey-layout">
+        <div class="journey-aside reveal">
+          <span class="eyebrow">Your care journey</span>
+          <h2>A clearer path to your next visit.</h2>
+          <p>
+            Dental treatment can involve questions and decisions. A
+            considered, patient-first process helps you understand what
+            happens next.
+          </p>
+          <a class="btn btn-primary" href="https://wa.me/971501582454" target="_blank" rel="noopener">
+            Talk to our team <span class="arrow">↗</span>
+          </a>
+        </div>
+
+        <div class="journey-steps">
+          <article class="journey-step reveal">
+            <div class="step-number">01</div>
+            <div>
+              <h3>Tell us what you need</h3>
+              <p>
+                Contact the centre with your question or appointment
+                request. The team can help you identify the appropriate
+                next step.
+              </p>
+            </div>
+          </article>
+
+          <article class="journey-step reveal">
+            <div class="step-number">02</div>
+            <div>
+              <h3>Understand your options</h3>
+              <p>
+                Discuss your concerns and explore relevant examinations,
+                treatment choices and specialist input where appropriate.
+              </p>
+            </div>
+          </article>
+
+          <article class="journey-step reveal">
+            <div class="step-number">03</div>
+            <div>
+              <h3>Make an informed decision</h3>
+              <p>
+                Understand the proposed approach and ask questions before
+                deciding how you would like to proceed.
+              </p>
+            </div>
+          </article>
+
+          <article class="journey-step reveal">
+            <div class="step-number">04</div>
+            <div>
+              <h3>Continue your dental care</h3>
+              <p>
+                Follow the care plan agreed with your dental professional
+                and arrange any recommended follow-up visits.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CLINICAL TEAM -->
+    <section class="team-section" id="team">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow">People behind your care</span>
+          <h2>Different specialties. A shared focus on your smile.</h2>
+          <p class="section-intro">
+            MMDC brings together dental professionals across a range of
+            disciplines, helping patients access different areas of
+            expertise within one centre.
+          </p>
+        </div>
+
+        <div class="team-feature reveal">
+          <div class="team-feature-image">
+            <img
+              src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1000&q=85"
+              alt="Contemporary dental clinic interior"
+              loading="lazy"
+            >
+          </div>
+
+          <div class="team-feature-copy">
+            <span class="eyebrow">A multidisciplinary approach</span>
+            <h2>Expertise that spans more than one discipline.</h2>
+            <p>
+              From general and cosmetic dentistry to orthodontics,
+              periodontics, paediatric dentistry and oral surgery, MMDC's
+              team covers a broad range of dental needs.
+            </p>
+            <p>
+              The centre's published team includes North American-trained
+              dental professionals alongside specialists with international
+              training backgrounds.
+            </p>
+
+            <div class="team-tags">
+              <span>General dentistry</span>
+              <span>Implantology</span>
+              <span>Cosmetic dentistry</span>
+              <span>Orthodontics</span>
+              <span>Periodontics</span>
+              <span>Paediatric dentistry</span>
+              <span>Endodontics</span>
+              <span>Oral surgery</span>
+            </div>
+
+            <a class="btn btn-outline" href="https://mmdc.ae/" target="_blank" rel="noopener">
+              Meet the MMDC team <span class="arrow">↗</span>
+            </a>
+          </div>
+        </div>
+
+        <p class="team-note">
+          Individual practitioner profiles, qualifications and availability
+          should be confirmed with MMDC before publication of a full
+          clinician directory.
+        </p>
+      </div>
+    </section>
+
+    <!-- CLINICAL TECHNOLOGY -->
+    <section class="technology-section">
+      <div class="container technology-grid">
+        <div class="technology-copy reveal">
+          <span class="eyebrow">Care informed by technology</span>
+          <h2>Thoughtful treatment starts with understanding.</h2>
+          <p>
+            Dental technology can support clearer assessment and more
+            informed treatment planning. MMDC's published services include
+            digital imaging and diagnostic tools as part of its wider
+            clinical offering.
+          </p>
+
+          <div class="technology-points">
+            <div class="technology-point">
+              <strong>Digital imaging</strong>
+              <span>Intraoral and panoramic X-ray services</span>
+            </div>
+            <div class="technology-point">
+              <strong>3D diagnostics</strong>
+              <span>CBCT imaging listed among available services</span>
+            </div>
+            <div class="technology-point">
+              <strong>Intraoral cameras</strong>
+              <span>Additional visual support during assessment</span>
+            </div>
+            <div class="technology-point">
+              <strong>Treatment planning</strong>
+              <span>Options discussed according to individual needs</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="technology-image reveal">
+          <img
+            src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&w=1000&q=85"
+            alt="Dental professional working with clinical equipment"
+            loading="lazy"
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- PATIENT TRUST -->
+    <section class="reviews-section" id="reviews">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow">Patient confidence</span>
+          <h2>Trust is built through every interaction.</h2>
+          <p class="section-intro">
+            Choosing a dental centre is personal. Clear communication,
+            professional care and patient experiences all play a role.
+          </p>
+        </div>
+
+        <div class="review-panel reveal">
+          <div class="review-score">
+            <strong>5.0</strong>
+            <div class="review-stars" aria-label="Five stars">★★★★★</div>
+            <span>Google rating displayed on MMDC's website</span>
+          </div>
+
+          <div class="review-copy">
+            <h3>Explore patient feedback before you decide.</h3>
+            <p>
+              Read the experiences shared by patients and learn more about
+              the care they have received at MMDC. Review information can
+              change, so check the live listing for the latest feedback.
+            </p>
+            <a
+              class="btn btn-primary"
+              href="https://www.google.com/search?q=MMDC+Medical+Dental+Center+Dubai+reviews"
+              target="_blank"
+              rel="noopener"
+            >
+              Find MMDC reviews <span class="arrow">↗</span>
+            </a>
+            <p class="review-disclaimer">
+              The 5.0 rating is presented on the existing MMDC website;
+              the live Google listing should be checked for the current
+              score and review count.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq-section">
+      <div class="container faq-layout">
+        <div class="faq-aside reveal">
+          <span class="eyebrow">Helpful information</span>
+          <h2>Questions before your visit?</h2>
+          <p>
+            Here are a few practical details to help you get started.
+            Contact the centre directly if you need advice about a
+            particular treatment or appointment.
+          </p>
+          <a class="service-link" href="https://wa.me/971501582454" target="_blank" rel="noopener">
+            Ask the MMDC team <span>→</span>
+          </a>
+        </div>
+
+        <div class="faq-list reveal">
+          <div class="faq-item active">
+            <button class="faq-question" aria-expanded="true">
+              <span>Where is MMDC located?</span><span>+</span>
+            </button>
+            <div class="faq-answer">
+              MMDC is located at Suite 202, 2nd Floor, Tameem House,
+              Barsha Heights (TECOM), Dubai, UAE.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>What are the centre's opening hours?</span><span>+</span>
+            </button>
+            <div class="faq-answer">
+              The published opening hours are Saturday to Thursday,
+              10:00 AM to 7:00 PM. The centre is listed as closed on Friday.
+              Please contact MMDC to confirm availability before visiting.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>What dental treatments are available?</span><span>+</span>
+            </button>
+            <div class="faq-answer">
+              Published services include general dentistry, cosmetic
+              treatments, dental implants, orthodontics, paediatric
+              dentistry, gum treatment, prosthodontics and oral surgery.
+              Contact the centre about a specific treatment.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Can I contact MMDC through WhatsApp?</span><span>+</span>
+            </button>
+            <div class="faq-answer">
+              Yes. You can contact the centre through WhatsApp at
+              +971 50 158 2454 or call +971 4 277 6055.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Does MMDC provide dental care for children?</span><span>+</span>
+            </button>
+            <div class="faq-answer">
+              Paediatric dentistry is among the services published by
+              MMDC. Contact the team to discuss your child's needs and
+              appointment availability.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="appointment-section">
+      <div class="container appointment-inner">
+        <div class="appointment-copy reveal">
+          <span class="eyebrow">Your next step starts here</span>
+          <h2>Let's talk about your smile.</h2>
+          <p>
+            Whether you have a question about a treatment or are ready to
+            arrange a visit, the MMDC team is here to help you take the
+            next step.
+          </p>
+        </div>
+
+        <div class="appointment-actions reveal">
+          <a class="btn btn-primary" href="https://wa.me/971501582454" target="_blank" rel="noopener">
+            Message us on WhatsApp <span class="arrow">↗</span>
+          </a>
+          <a class="btn btn-outline" href="tel:+97142776055">
+            Call +971 4 277 6055 <span class="arrow">↗</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact-section" id="contact">
+      <div class="container contact-grid">
+        <div class="contact-copy reveal">
+          <span class="eyebrow">Visit MMDC</span>
+          <h2>Find us in Barsha Heights.</h2>
+          <p>
+            Get in touch to discuss your dental needs, ask about available
+            treatments or arrange an appointment.
+          </p>
+
+          <div class="contact-details">
+            <div class="contact-detail">
+              <div class="contact-detail-mark">⌖</div>
+              <div>
+                <strong>Address</strong>
+                <span>Suite 202, 2nd Floor, Tameem House, Barsha Heights (TECOM), Dubai, UAE</span>
+              </div>
+            </div>
+
+            <div class="contact-detail">
+              <div class="contact-detail-mark">T</div>
+              <div>
+                <strong>Telephone</strong>
+                <a href="tel:+97142776055">+971 4 277 6055</a>
+              </div>
+            </div>
+
+            <div class="contact-detail">
+              <div class="contact-detail-mark">W</div>
+              <div>
+                <strong>WhatsApp</strong>
+                <a href="https://wa.me/971501582454" target="_blank" rel="noopener">+971 50 158 2454</a>
+              </div>
+            </div>
+
+            <div class="contact-detail">
+              <div class="contact-detail-mark">@</div>
+              <div>
+                <strong>Email</strong>
+                <a href="mailto:info@mmdc.ae">info@mmdc.ae</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="location-card reveal">
+          <span class="eyebrow">Plan your visit</span>
+          <h3>Opening hours</h3>
+          <p>Contact the centre if you would like to confirm appointment availability.</p>
+
+          <div class="hours-row"><span>Saturday – Thursday</span><strong>10:00 AM – 7:00 PM</strong></div>
+          <div class="hours-row"><span>Friday</span><strong>Closed</strong></div>
+
+          <div class="location-actions">
+            <a
+              class="btn btn-primary"
+              href="https://www.google.com/maps/search/?api=1&query=Tameem+House+Barsha+Heights+Dubai"
+              target="_blank"
+              rel="noopener"
+            >
+              Get directions <span class="arrow">↗</span>
+            </a>
+            <a class="btn btn-outline" href="mailto:info@mmdc.ae">
+              Send an email <span class="arrow">↗</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div>
+          <a class="brand footer-brand" href="#home">
+            <span class="brand-mark">M</span>
+            <span class="brand-copy">
+              <strong>MMDC</strong>
+              <small>Medical & Dental Center</small>
+            </span>
+          </a>
+          <p class="footer-description">
+            Multidisciplinary dental care in Dubai, bringing together
+            different areas of expertise with a personal approach to
+            patient care.
+          </p>
+        </div>
+
+        <nav class="footer-links" aria-label="Footer navigation">
+          <a href="#about">About</a>
+          <a href="#services">Treatments</a>
+          <a href="#team">Our expertise</a>
+          <a href="#reviews">Patient trust</a>
+          <a href="#contact">Contact</a>
+          <a href="https://mmdc.ae/" target="_blank" rel="noopener">Current website</a>
+        </nav>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© <span id="year"></span> MMDC Medical & Dental Center. All rights reserved.</span>
+        <span>Dental care in Barsha Heights, Dubai.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Exactly two persistent mobile actions -->
+  <div class="mobile-action-bar" aria-label="Quick contact actions">
+    <a class="btn btn-outline" href="tel:+97142776055">Call MMDC</a>
+    <a class="btn btn-primary" href="https://wa.me/971501582454" target="_blank" rel="noopener">WhatsApp</a>
+  </div>
+
+  <script>
+    // Mobile navigation
+    const menuToggle = document.getElementById("menuToggle");
+    const mainNav = document.getElementById("mainNav");
+
+    menuToggle.addEventListener("click", () => {
+      const isOpen = mainNav.classList.toggle("open");
+      menuToggle.setAttribute("aria-expanded", String(isOpen));
+      menuToggle.setAttribute("aria-label", isOpen ? "Close navigation menu" : "Open navigation menu");
+      menuToggle.textContent = isOpen ? "×" : "☰";
+    });
+
+    mainNav.querySelectorAll("a").forEach(link => {
+      link.addEventListener("click", () => {
+        mainNav.classList.remove("open");
+        menuToggle.setAttribute("aria-expanded", "false");
+        menuToggle.setAttribute("aria-label", "Open navigation menu");
+        menuToggle.textContent = "☰";
+      });
+    });
+
+    // Accessible FAQ accordion
+    document.querySelectorAll(".faq-question").forEach(button => {
+      button.addEventListener("click", () => {
+        const item = button.closest(".faq-item");
+        const isActive = item.classList.contains("active");
+
+        document.querySelectorAll(".faq-item").forEach(otherItem => {
+          otherItem.classList.remove("active");
+          otherItem.querySelector(".faq-question").setAttribute("aria-expanded", "false");
+        });
+
+        if (!isActive) {
+          item.classList.add("active");
+          button.setAttribute("aria-expanded", "true");
+        }
+      });
+    });
+
+    // Scroll reveal, with reduced-motion support
+    const revealElements = document.querySelectorAll(".reveal");
+
+    if ("IntersectionObserver" in window &&
+        !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      const revealObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.12 });
+
+      revealElements.forEach(element => revealObserver.observe(element));
+    } else {
+      revealElements.forEach(element => element.classList.add("visible"));
+    }
+
+    // Current copyright year
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
